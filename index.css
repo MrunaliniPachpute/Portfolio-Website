@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  gap: 0;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  width: max-content;
+  border: 2px solid rgb(59, 56, 56);
+  background-color: #333333;
+  box-shadow: 0 0 15px #000000; /* default glow */
+  transition: all 0.4s ease;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+nav:hover {
+  color: #000000;
+  box-shadow: 0 0 20px #6a5acd;
+  border: 2px solid #6A5ACD(0, 255, 255, 0.9);
+}
+
+nav a {
+  position: relative;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  z-index: 2;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+nav span {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(45deg, #ff6161, #e69e95);
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(51, 255, 252, 0.5);
+  transition: all 0.4s ease;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* COLLAPSE NAVBAR BELOW 700px */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    border: 2px solid #6a5acd;
+    border-radius: 12px;
+    width: 200px;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    color: #000000;
+    right: auto;
+  }
+
+  .banner {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 5px;
+  color: #ffc300;
+  font-size: 20px;
+  line-height: 30px;
+  text-shadow: 0 0 1px #ff9900;
+}
+
+.Intro {
+  margin: 5px 5px 5px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.myVideo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.video-wrapper {
+  width: 305px;
+  height: 305px;
+  border-radius: 50%;
+  margin: 5px 90px 0px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.video-wrapper::after,
+.video-wrapper::before {
+  content: " ";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    #9b59b6,
+    rgb(252, 102, 102)
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 50%;
+  animation: 3s spin linear infinite;
+}
+
+.video-wrapper::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.video {
+  margin-left: auto;
+}
+
+.headings {
+  margin: 10px;
+}
+
+.glow-line {
+  border: none;
+  height: 4px;
+  width: 80%;
+  margin: 50px auto;
+  background: linear-gradient(90deg, #ff0000, #ffc300, #20cae0);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 76, 76, 0.6), 0 0 25px rgba(255, 195, 0, 0.6),
+    0 0 35px rgba(0, 224, 255, 0.6);
+  animation: glow-move 3s linear infinite;
+}
+
+/* 👇 Using full 'grid-template' values with named areas */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.title {
+  grid-area: title;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.skills {
+  grid-area: skills;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+/* Each skill card */
+.skill {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease;
+  will-change: transform;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 195, 0, 0.3);
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Right side with circle image */
+.right-circle {
+  justify-self: end; /* pushes image to right in grid */
+}
+.right-circle img {
+  height: 420px;
+  width: auto;
+}
+
+/* 🎨 Professional color palette */
+.red {
+  background-color: #dc2626;
+}
+.green {
+  background-color: #4caf50;
+}
+.blue {
+  background-color: #3f77b6;
+}
+.yellow {
+  background-color: #f59e0b;
+  color: #222;
+}
+.dark {
+  background-color: #1f1f1f;
+}
+.orange {
+  background-color: #1896d4;
+  color: #222;
+}
+.purple {
+  background-color: #9b59b6;
+}
+.navy {
+  background-color: #1a486a;
+}
+.teal {
+  background-color: #16a34a;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .right-circle img {
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .skills {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+
+.rotating-wrapper {
+  display: inline-block;
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
