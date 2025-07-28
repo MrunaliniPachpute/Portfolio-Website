@@ -1,8 +1,8 @@
-# 🌐 Mrunalini's Portfolio
+# Mrunalini's Portfolio
 
 This is my personal portfolio website showcasing my projects, skills, and achievements in full-stack development, AI/ML, and community contributions.
 
-## 🚀 Tech Stack
+## 💻 Tech Stack
 - MERN Stack
 - Bootstrap
 - Tailwind CSS
