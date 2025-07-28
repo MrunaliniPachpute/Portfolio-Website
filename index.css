@@ -412,7 +412,7 @@ h3 {
 
 .stat-card {
   width: 200px;
-  height: 200px;
+  height: 230px;
   padding: 20px;
   background-color: white;
   border: 2px solid #222;
@@ -551,10 +551,17 @@ h3 {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 20px;
+}
+
+.cards > .card {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 450px !important;
 }
 
 /* FOOTER CONTACT ME SECTION CSS */
@@ -752,7 +759,6 @@ h3 {
   background-color: rgb(248, 176, 176);
 }
 
-
 .no-transition {
   transition: none !important;
 }
@@ -781,11 +787,6 @@ h3 {
   background-color: #3d378a;
   color: rgb(207, 203, 203);
 }
-
-
-
-
-
 
 .no-transition {
   transition: none !important;
@@ -823,14 +824,13 @@ h3 {
 .card-img-overlay:hover {
   opacity: 0.3;
   background-color: white;
-} 
+}
 
-.contact-links{
+.contact-links {
   text-decoration: none;
   margin: none;
   padding: 0%;
 }
-
 
 /* LIGHT N DARK MODE */
 /* Default Light Theme */
@@ -859,4 +859,31 @@ body.dark-mode {
   border: none;
   background-color: #ddd;
   border-radius: 8px;
+}
+
+/* ABOUT SECTION MARKING */
+p mark {
+  background-color: rgba(
+    255,
+    107,
+    129,
+    0.1
+  ); /* light reddish-pink with 30% opacity */
+  color: inherit; /* or white/black depending on your background */
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* PROJECT IMAGE STYLE */
+.project-img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-bottom: 0.2px;
+  border-bottom: 2px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }

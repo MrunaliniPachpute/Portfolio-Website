@@ -106,21 +106,21 @@ function homeClicked(e) {
 function aboutClicked(e) {
   e.preventDefault();
   window.scrollTo({
-    top: 450,
+    top: 470,
     behavior: "smooth",
   });
 }
 function projClicked(e) {
   e.preventDefault();
   window.scrollTo({
-    top: 1150,
+    top: 1170,
     behavior: "smooth",
   });
 }
 function sparksClicked(e) {
   e.preventDefault();
   window.scrollTo({
-    top: 1900,
+    top: 2090,
     behavior: "smooth",
   });
 }
