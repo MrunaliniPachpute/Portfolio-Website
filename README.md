@@ -6,7 +6,7 @@ This is my personal portfolio website showcasing my projects, skills, and achiev
 - MERN Stack
 - Bootstrap
 - Tailwind CSS
-- opencv
+- Opencv
 - JavaScript
 - GitHub Pages / Vercel (Deployment)
 
