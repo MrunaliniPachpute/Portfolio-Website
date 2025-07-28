@@ -50,8 +50,6 @@
             </div>
         </div>
 
-        <!-- main -->
-
         <hr class="glow-line">
 
         <section id="about">
@@ -93,21 +91,25 @@
             <section class="stats-section">
                 <div class="stats-grid">
                     <div class="stat-card red-border">
-                        <h2>8+</h2>
-                        <p>Projects Completed</p>
-                        <p class="des">Mern-6, ML-2</p>
+                        <div class="card-img-overlay"></div>
+                        <h2>2</h2>
+                        <p>Major Projects Completed</p>
+                        <p class="des">MERN-1, AI/ML-1.</p>
                     </div>
                     <div class="stat-card orange-border">
-                        <h2>4+</h2>
+                        <div class="card-img-overlay"></div>
+                        <h2>1</h2>
                         <p>Tech Stacks Mastered</p>
-                        <p class="des">MERN, ML basics, Git, REST, etc.</p>
+                        <p class="des">MERN.</p>
                     </div>
                     <div class="stat-card blue-border">
+                        <div class="card-img-overlay"></div>
                         <h2>5+</h2>
                         <p>Certifications Earned</p>
-                        <p class="des">NPTEL topper, Power BI, Azure Fundamentals, etc.</p>
+                        <p class="des">MLSA Beta, IIT Bombay Pace Coders award, NPTEL topper, etc.</p>
                     </div>
                     <div class="stat-card green-border">
+                        <div class="card-img-overlay"></div>
                         <h2>150+</h2>
                         <p>Students Reached</p>
                         <p class="des">Under MLSA</p>
@@ -122,8 +124,14 @@
         <h2 class="title">My Projects</h2>
 
         <div class="cards">
+
+            <!-- SAMPLE PROJECT CARD -->
             <div class="card" style="width: 18rem;">
-                <img src="./assets/proj1.jfif" class="card-img-top" alt="Project Screenshot">
+
+                <video class="card-img-top" controls disablepictureinpicture>
+                    <source src="./assets/j.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
 
                 <div class="card-body">
                     <h5 class="card-title">Project Title</h5>
@@ -150,6 +158,43 @@
 
             </div>
 
+            <!-- SPOTIFY PROJECT -->
+            <div class="card" style="width: 18rem;">
+                <img src="./assets/proj1.jfif" class="card-img-top" alt="Project Screenshot">
+
+                <div class="card-body">
+                    <h5 class="card-title">🎧 MelodyStream</h5>
+                </div>
+                <p class="list-group-item">Built a secure Node.js + Express backend using yt-dlp to extract audio from
+                    YouTube. Integrated with YouTube Data API (Google Cloud) and exposed a CORS-enabled endpoint for
+                    frontend streaming.
+                </p>
+                </p>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Tech Stack:</strong>
+                        Node.js, Express, JavaScript, HTML5, Axios.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Features:</strong><br>
+                        Song search via API<br>
+                        Audio extraction & streaming<br>
+                        Backend processing with API logic<br>
+                        Hands-on API integration practice
+                    </li>
+                </ul>
+
+                <div class="card-button">
+
+                    <a href="https://github.com/MrunaliniPachpute/MelodyStream" class="b2 gitButton"> Github </a>
+                    <a href="https://www.linkedin.com/posts/mrunalini-pachpute_javascript-youtubeapi-googlecloud-activity-7343292780795871232-txmJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEqIIAIBbrQ5LTEfnfBQcw79z-OvNkM8jOU"
+                        class="b2 linkedinBtn">Linkedin</a>
+                </div>
+
+
+            </div>
+
         </div>
 
         <hr class="glow-line">
@@ -158,14 +203,16 @@
             <div class="left-content">
                 <div class="title">Sparks</div>
                 <div class="skills">
-                    <div class="skill red">React.js</div>
-                    <div class="skill green">MongoDB</div>
-                    <div class="skill blue">HTML & CSS</div>
+                    <div class="skill yellow">Microsoft MLSA (Beta)</div>
+                    <div class="skill red">Full-Stack MERN Developer</div>
+                    <div class="skill green">DSA in Java</div>
+                    <div class="skill blue">Tech enthusiast</div>
                     <div class="skill yellow">JavaScript</div>
                     <div class="skill dark">Git & GitHub</div>
-                    <div class="skill orange">REST APIs</div>
-                    <div class="skill navy">Machine Learning</div>
-                    <div class="skill teal">VS Code</div>
+                    <div class="skill purple">Python & Machine Learning</div>
+                    <div class="skill purple">Public Speaking</div>
+                    <div class="skill teal">Open Source Contributor</div>
+                    <div class="skill navy">Hosting Workshops</div>
                 </div>
             </div>
 
@@ -220,38 +267,54 @@
         <hr class="glow-line">
 
         <!-- footer -->
+
+
         <section class="contact-section" id="contact">
             <h2 class="contact-heading">Let's Connect</h2>
             <p class="coffee-line">Open to collaboration, projects & coffee chats ☕</p>
-            <div class="contact-grid">
-                <div class="contact-card red">
-                    <i class="fas fa-envelope icon"></i>
-                    <h4>Email</h4>
-                    <p>pachputemrunalini@gmail.com</p>
-                </div>
 
-                <div class="contact-card blue">
-                    <i class="fab fa-github icon"></i>
-                    <h4>GitHub</h4>
-                    <p>https://github.com/MrunaliniPachpute</p>
-                </div>
 
-                <div class="contact-card yellow">
-                    <i class="fab fa-linkedin icon"></i>
-                    <h4>LinkedIn</h4>
-                    <p>https://www.linkedin.com/in/mrunalini-pachpute/</p>
-                </div>
+            <div class="contact-grid"> <!-- remove 'row' -->
 
-                <div class="contact-card green">
-                    <i class="fas fa-file-download icon"></i>
-                    <h4>Resume</h4>
-                    <a href="resume.pdf" target="_blank" class="resume-link">Download</a>
-                </div>
+                <a href="#" class="contact-links">
+                    <div class="contact-card red">
+                        <i class="fas fa-envelope icon"></i>
+                        <h4>Email</h4>
+                        <p>pachputemrunalini@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/MrunaliniPachpute" class="contact-links">
+                    <div class="contact-card blue"><i class="fab fa-github icon"></i>
+                        <h4>GitHub</h4>
+                        <p>https://github.com/MrunaliniPachpute</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mrunalini-pachpute/" class="contact-links">
+                    <div class="contact-card yellow">
+                        <i class="fab fa-linkedin icon"></i>
+                        <h4>LinkedIn</h4>
+                        <p>https://www.linkedin.com/in/mrunalini-pachpute/</p>
+                    </div>
+                </a>
+
+                <a href="./assets/i3.png" download="Mrunu_Resume" class="contact-links">
+                    <div class="contact-card green"> <i class="fas fa-file-download icon"></i>
+                        <h4>Resume</h4>
+                        <p class="resume-link">Download</p>
+                    </div>
+                </a>
+
             </div>
+            <hr>
+            <p>&copy; 2025 <strong>Mrunalini Pachpute</strong>. All rights reserved.</p>
         </section>
 
+
         <!-- Scroll to Top Button -->
-        <span class="material-symbols-outlined" style="display: none;" onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
+        <span class="material-symbols-outlined" style="display: none;" onclick="scrollToTop()" id="scrollTopBtn"
+            title="Go to top">
             keyboard_control_key
         </span>
 

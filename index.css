@@ -815,3 +815,48 @@ h3 {
   background-color: #000000;
   color: rgb(207, 203, 203);
 }
+
+/* Card overlay effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.3;
+  background-color: white;
+} 
+
+.contact-links{
+  text-decoration: none;
+  margin: none;
+  padding: 0%;
+}
+
+
+/* LIGHT N DARK MODE */
+/* Default Light Theme */
+body {
+  background-color: #ffffff;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Theme Styles */
+body.dark-mode {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+.contact-card.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Optional: style the button */
+.theme-btn {
+  padding: 10px 15px;
+  margin: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+  border-radius: 8px;
+}
