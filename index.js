@@ -120,7 +120,7 @@ function projClicked(e) {
 function sparksClicked(e) {
   e.preventDefault();
   window.scrollTo({
-    top: 2090,
+    top: 3200,
     behavior: "smooth",
   });
 }
