@@ -154,6 +154,7 @@ h3 {
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 60% center;
 }
 
 .video-wrapper {
